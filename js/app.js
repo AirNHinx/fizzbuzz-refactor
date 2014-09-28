@@ -12,7 +12,7 @@ $(document).ready(function() {
 
 //function for making sure user enters a number
 var numCheck = function() {
-	console.log(userNumber);
+	console.log(+$('user-input').val());
 	if(isNaN(userNumber)) {
 		alert('Please choose a NUMBER!')
 	} else if (userNumber %1 !=0) {
