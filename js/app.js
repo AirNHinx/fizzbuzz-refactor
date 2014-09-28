@@ -1,12 +1,12 @@
 $(document).ready(function() {
 	var userNumber = +$('user-input').val();
+	$('.initiate').on('click', numCheck);
 	$('.user-input').on('keypress', function(event) {
 		if( event.which == 13) {
 			event.preventDefault();
 			numCheck();
 		}
 	});
-	$('.initiate').on('click', numCheck());
 
 //function for making sure user enters a number
 var numCheck = function() {
