@@ -1,5 +1,5 @@
 $(document).ready(function() {
-	$('.user-input').on("keypress", function(event)) {
+	$('.user-input').on('keypress', function(event)) {
 		if( event.which == 13) {
 			numCheck;
 		};
@@ -11,9 +11,9 @@ function numCheck() {
 	var userNumber = +$('user-input').val();
 	console.log(userNumber);
 	if(isNaN(userNumber)) {
-		alert("Please choose a NUMBER!")
+		alert('Please choose a NUMBER!')
 	} else if (userNumber %1 !=0) {
-		alert("Please choose an INTEGER aka WHOLE NUMBER!")
+		alert('Please choose an INTEGER aka WHOLE NUMBER!')
 	} else {
 		runFizzBuzz(userNumber);
 	}
