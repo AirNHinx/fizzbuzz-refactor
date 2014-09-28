@@ -1,18 +1,20 @@
 $(document).ready(function() {
 	var userNumber = $('user-input').val();
 	$('.initiate').click(function() {
+		console.log(+userNumber);
 		numCheck();
 	});
 	$('.user-input').on('keypress', function(event) {
 		if( event.which == 13) {
 			event.preventDefault();
+			console.log(+userNumber);
 			numCheck();
 		}
 	});
 
 //function for making sure user enters a number
 var numCheck = function() {
-	console.log(+userNumber);
+	//console.log(+userNumber);
 	if(isNaN(+userNumber)) {
 		alert('Please choose a NUMBER!')
 	} else if (+userNumber %1 !=0) {
