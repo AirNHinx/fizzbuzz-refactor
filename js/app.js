@@ -3,7 +3,7 @@ $(document).ready(function() {
 	$('.user-input').on('keypress', function(event) {
 		if( event.which == 13) {
 			event.preventDefault();
-			numCheck;
+			numCheck();
 		}
 	});
 	$('.initiate').on('click', numCheck);
