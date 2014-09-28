@@ -1,8 +1,8 @@
 $(document).ready(function() {
-	$('.user-input').on('keypress', function(event)) {
+	$('.user-input').on('keypress', function(event) {
 		if( event.which == 13) {
 			numCheck;
-		};
+		}
 	});
 	$('.initiate').on('click', numCheck);
 
