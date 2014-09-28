@@ -1,13 +1,13 @@
 $(document).ready(function() {
 	var userNumber = $('user-input').val();
 	$('.initiate').click(function() {
-		console.log(+userNumber);
+		//console.log(+userNumber);
 		numCheck();
 	});
 	$('.user-input').on('keypress', function(event) {
 		if( event.which == 13) {
 			event.preventDefault();
-			console.log(+userNumber);
+			//console.log(+userNumber);
 			numCheck();
 		}
 	});
