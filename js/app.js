@@ -6,7 +6,7 @@ $(document).ready(function() {
 			numCheck();
 		}
 	});
-	$('.initiate').on('click', numCheck);
+	$('.initiate').on('click', numCheck());
 
 //function for making sure user enters a number
 var numCheck = function() {
