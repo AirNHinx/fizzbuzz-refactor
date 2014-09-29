@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-	var userNumber = $('user-input').val());
+	var userNumber = $('user-input').val();
 
 	$('.initiate').click(function() {
 		//console.log(+userNumber);
