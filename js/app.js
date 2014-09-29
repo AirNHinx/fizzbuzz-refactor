@@ -15,7 +15,7 @@ $(document).ready(function() {
 
 //function for making sure user enters a number
 var numCheck = function() {
-	var userNumber = +$('.user-input').val();
+	//var userNumber = +$('.user-input').val();
 	console.log(userNumber);
 	if(isNaN(userNumber)) {
 		alert('Please choose a NUMBER! :)')
@@ -26,9 +26,11 @@ var numCheck = function() {
 	}
 }; 
 
+var userNumber = +$('.user-input').val();
+
 //function that runs fizzbuzz
 var runFizzBuzz = function(userNumber) {
-		var userNumber = +$('.user-input').val();
+		//var userNumber = +$('.user-input').val();
 		var sum = 0;
 		for (i=1; i<=userNumber; i++) {
 			if ((i%3) === 0) {
