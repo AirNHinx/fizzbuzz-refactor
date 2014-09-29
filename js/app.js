@@ -12,7 +12,6 @@ $(document).ready(function() {
 		}
 	});
 
-var userNumber = +$('.user-input').val();
 
 //function for making sure user enters a number
 var numCheck = function() {
@@ -44,3 +43,5 @@ var runFizzBuzz = function(userNumber) {
 		}
 	}
 });
+
+var userNumber = +$('.user-input').val();
