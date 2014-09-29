@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-	//var userNumber = $('user-input').val();
+	var userNumber = +$('.user-input').val();
 
 	$('.initiate').click(function() {
 		//console.log(+userNumber);
@@ -16,13 +16,12 @@ $(document).ready(function() {
 
 //function for making sure user enters a number
 var numCheck = function() {
-	var userNumber = +$('.user-input').val();
 	console.log(userNumber);
 	//userNumber = +userNumber;
 	if(isNaN(userNumber)) {
 		alert('Please choose a NUMBER! :)')
 	} else if (userNumber %1 !=0) {
-		alert('Please choose an INTEGER aka WHOLE NUMBER! ;)')
+		alert('Please choose an INTEGER or WHOLE NUMBER! ;)')
 	} else {
 		runFizzBuzz(userNumber);
 	}
@@ -31,7 +30,7 @@ var numCheck = function() {
 //function that runs fizzbuzz
 var runFizzBuzz = function() {
 		var sum = 0;
-		for (i=1; i<=999; i++) {
+		for (i=1; i<=userNumber; i++) {
 			if ((i%3) === 0) {
 				if ((i%5) === 0) {
 					$('.results').append('<p>FIZZBUZZ!!</p>');	
