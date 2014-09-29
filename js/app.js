@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-	var userNumber = $('user-input').val();
+	//var userNumber = $('user-input').val();
 
 	$('.initiate').click(function() {
 		//console.log(+userNumber);
@@ -16,12 +16,13 @@ $(document).ready(function() {
 
 //function for making sure user enters a number
 var numCheck = function() {
-	console.log(+userNumber);
-	userNumber = +userNumber;
+	var userNumber = +$('user-input').val();
+	console.log(userNumber);
+	//userNumber = +userNumber;
 	if(isNaN(userNumber)) {
-		alert('Please choose a NUMBER!')
+		alert('Please choose a NUMBER! :)')
 	} else if (userNumber %1 !=0) {
-		alert('Please choose an INTEGER aka WHOLE NUMBER!')
+		alert('Please choose an INTEGER aka WHOLE NUMBER! ;)')
 	} else {
 		runFizzBuzz(userNumber);
 	}
