@@ -46,6 +46,9 @@ var runFizzBuzz = function(userNumber) {
 			}
 		}
 	}
+
+var userNumber = +$('.user-input').val();
+
 });
 
 
