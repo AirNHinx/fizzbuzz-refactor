@@ -31,7 +31,6 @@ var numCheck = function() {
 //function that runs fizzbuzz
 var runFizzBuzz = function(userNumber) {
 		var userNumber = +$('.user-input').val();
-		$(user-input).val("");
 		var sum = 0;
 		for (i=1; i<=userNumber; i++) {
 			if ((i%3) === 0) {
